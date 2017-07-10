@@ -1,0 +1,566 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta name="description" content="Course webpage for CS684-Autumn-Semester-2016">
+      <meta name="author" content="E.R.T.S. Lab">
+
+      <title>CS684-Embedded Systems</title>
+
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <link href="css/scrolling-nav.css" rel="stylesheet">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<style type="text/css">
+        #wrap {
+             width:600px; 
+             margin:0 auto;
+     }
+     #left_col {
+             float:left;
+             width:300px;
+     }
+     #right_col {
+             float:right;
+             width:300px;
+     }
+</style>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+              <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand page-scroll" href="#page-top">CS684</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about div -->
+                      <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="#outline">Course Outline</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="#experiments">Lab Experiments</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="#resources">Resources</a>
+                    </li>
+                    <li>
+                            <a class="page-scroll" href="#inventory">Lab Inventory</a>
+                    </li>
+                    <!--
+                    <li>
+                            <a class="page-scroll" href="#projects">Projects</a>
+                    </li>-->
+            </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+
+<!-- Intro div -->
+<div id="intro" class="intro-div">
+    <div class="container">
+          <div class="row">
+                <div class="col-md-12">
+                  <br><br><br><br><br>
+                      <h1 class="text-center">CS684: Embedded Systems</h1>
+                      <h3 class="text-center"><strong>Instructor: Prof. Kavi Arya</strong></h3>
+                      <br>
+                      <hr>        
+                      <h4 class="text-center"><strong>Announcements:</strong> Lab 0 uploaded. <b>Deadline: 29th July, 2016.</b> Lab 1 will be released on 29th July, 2016. (Updated: 27th July, 2016).</h4>
+                      <div align="center"><a class="btn btn-default page-scroll" href="#experiments">Click here for details</a></div>
+                      <br>
+                      <hr>
+                      <div id="intro" class="content-div">
+                            <div class="container">
+                                  <div class="row">
+                                        <div class="col-md-12">
+                                              <div id="wrap">
+                                                    <div class="row">
+                                                          <div class="col-md-6">
+                                                                <h4><strong>Lecture Slot:</strong> 8</h4>
+                                                                <h4><strong>Lecture Venue:</strong> SIC201, KReSIT Building</h4>
+                                                                <h4><strong>Lecture Days:</strong> Monday & Thursday (2:00 PM to 3:30 PM)</h4>
+                                                                <h4><strong>Lab Days:</strong> Wednesday & Thursday (3:30 PM to 5:00 PM)</h4>
+                                                                <h4><strong>Lab Venue:</strong> SIC304, KReSIT Building</h4>
+                                                                <h4><strong>Instructor office hours:</strong> By appointment (please send an email to fix up a time)</h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                                <h4>
+                                                                      <strong>TAs:</strong>
+                                                                      <ol>
+                                                                            <li>Cynthia Josephine </li>
+                                                                            <li>Khalid Waseem </li>
+                                                                            <li>Naveen C </li>
+                                                                    </ol>
+                                                                    <strong>Lab Staff:</strong>
+                                                                    <ol>
+                                                                            <li>Parin Chheda</li>
+                                                                            <li>Piyush Manavar</li>
+                                                                            <li>Saurav Shandilya</li>
+                                                                            <li>Vishwanathan Iyer</li>
+                                                                    </ol>
+                                                                </h4>
+                                                    </div>
+                                            </div>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+    </div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- Course Outline div -->
+<div id="outline" class="even-div">
+        <div class="container">
+          <br><br><br><br><br>
+                <h1 class="text-center">Course Outline</h1>
+                <div id="outline" class="gcontent-div">
+                    <div class="container">
+                          <div class="row">
+                                <div class="col-md-12">
+                                        <div id="wrap">
+                                                <div class="row">
+                                                        <div class="col-md-6 col-sm-2">
+                                                                 <h3><strong>Theory:</strong> </h3> 
+                                                                 <strong>Introduction:</strong> 
+                                                                 Embedded Systems Applications (Digital Camera) <br> 
+                                                                 <strong>Model based design:</strong>
+                                                                 <li>Introduction and FSM</li> 
+                                                                 <li>State Charts</li> 
+                                                                 <li>Introduction to Esterel</li>
+                                                                 <strong>Temporal Logic</strong> <br>
+                                                                 <strong>RTOS:</strong> <br>
+                                                                 <li>eCos,Emerald,Spring,SPARC,VxWorks</li>
+                                                                 <li>OS paradogms</li>
+                                                                 <li>Extensions to RM scheduling and beyond</li>
+                                                                 <li>RT Communicaiton/ Interfacing and Buses</li>
+                                                                 <li>Real time systems implementaion issues</li>
+                                                                 <strong>Introduction to Automatic Control using Scilab</strong><br>
+                                                                 <strong>Introduction to Fabrication.</strong>                                                 
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                         <h3><b>Practical:</b></h3>
+                                                         <strong><p>Basic Peripherals: </p></strong>
+                                                         <ol><li>Introduction to the ARM Cortex M4F, Peripherals and Code Composer Studio </li>
+                                                            <li>Understanding Tiva Ware, Initialization, and GPIO</li>
+                                                            <li>Interrupts and the Timers</li>
+                                                            <li>PWM and Servo Motor Interfacing</li>
+                                                            <li>ADC and Interfacing Joystick</li></ol>
+                                                            <strong><p>Miscellaneous Peripherals: </p></strong>
+                                                            <ol><li>Interfacing LCD (16x2) InternaI</li>
+                                                              <li>UART and Interfacing Sensors(LM35)</li>
+                                                              <li>Interfacing graphical LCD </li></ol>
+                                                              <strong><p>RTOS:</p> </strong>
+                                                              <ol><li>Basics of Real-time operating systems.</li>
+                                                                <li>Pracitcal example showing the effectiveness of RTOS.</li></ol>
+                                                        </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row" align="center">
+                                                      <h3 ><strong>Grading Policy:</strong></h3><br>
+                                                      <b>Theory and Assignments :</b> 20 % <br>
+                                                      <b>Lab and Quizes :</b> 20 % <br>
+                                                      <b>Midsem :</b> 20 % <br>
+                                                      <b>Project:</b> 40 % <br>
+                                                      <br>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+
+<div id="experiments" class="odd-div">
+        <div class="container">
+          <br><br><br><br><br>
+                <h1 class="text-center">Lectures and Lab Experiments</h1>
+                <div id="outline" class="content-div">
+                    <div class="container">
+                          <div class="row">
+                                <div class="col-md-12">
+                                        <div id="wrap">
+                                                <table border = "1" style="width:100%" max-width=100% white-space=nowrap >
+
+                                                    <tr align="center">
+                                                            <td width=5%  > <b>Week#</b> </td>
+                                                            <td width=10%  > <b>Date</b> </td>
+                                                            <td width=50%  > <b>Topic</b> </td>
+                                                            <td width=30% > <b>Resources</b> </td>
+                                                    </tr>
+
+                                                    <tr align="center">
+                                                            <td > 1 </td>
+                                                            <td > Jul 18 <br>(Mon)</td>
+                                                            <td > Introduction to the course, grading policy, logistics </td>
+                                                            <td > - </td>
+                                                    </tr>
+
+                                                    <tr align="center">
+                                                            <td > 2 </td>
+                                                            <td > Jul 21 <br>(Thu)</td>
+                                                            <td > Introduction: Embedded Systems Applications (Digital Camera) </td>
+                                                            <td > - </td>
+                                                    </tr>
+                                           
+                                                    <tr align="center">
+                                                            <td > * </td>
+                                                            <td > To be announced <br>(-)</td>
+                                                            <td > Workshop on Firebird V Atmega 2560 </td>
+                                                            <td > <a target="blank" href="https://drive.google.com/folderview?id=0BwLmQGS-3ITBdzE2dXo5TXF4U0E&usp=sharing"> Firebird V ATMEGA2560 DVD </a> <br>
+                                                                  <a target="blank" href="Resources/FirebirdLinux/Programming AVR from Linux.pdf"> Programming AVR in Linux (LINUX)</a> <br>
+                                                                  <a target="blank" href="Resources/FirebirdLinux/avrdude_script.sh"> Script to load hex file into the Robot (LINUX) </a> 
+
+                                                          </td>
+                                                  </tr>
+                                                <!--
+                                                  <tr>
+                                                    <td> 3 </td>
+                                                    <td> Jan 20 <br>(Wed)</td>
+                                                    <td> Ideation and Lab-0 doubt solving</td>
+                                                    <td> <a target="blank" href="Experiments/Lab-0.zip"> Lab-0 (CCS Installation and running Test code on board) </a> </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td> 4 </td>
+                                                    <td> Jan 27 <br>(Wed)</td>
+                                                    <td> Introduction to the ARM® Cortex™-M4F and Peripherals <br> Introduction to Code Composer Studio <br> TivaWare, Initialization and GPIO </td>
+                                                    <td> <a target="blank" href="Experiments/Lab-1.zip"> Lab-1 (Accessing GPIO on TIVA C Series Launchpad Board) </a> </td> 
+                                            </tr>
+
+                                            <tr>
+                                                    <td> 5 </td>
+                                                    <td> Feb 3  <br>(Wed)</td>
+                                                    <td> Interrupts and the Timers </td>
+                                                    <td> <a target="blank" href="Experiments/Lab-2_Handout.pdf">Lab-2 (Interrupts and Timers on TIVA C Series Launchpad Board) </a> </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td> 6 </td>
+                                                    <td> Feb 10 <br>(Wed)</td>
+                                                    <td> PWM </td>
+                                                    <td> <a target="blank" href="Experiments/Lab-3.zip">Lab-3 (PWM on TIVA C Series Launchpad Board) </a> </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td> 7 </td>
+                                                    <td> Feb 17 <br>(Wed)</td>
+                                                    <td> ADC12 and UART </td>
+                                                    <td>  <a target="blank" href="Experiments/Lab-4.zip">Lab-4 (ADC and UART on TIVA C Series Launchpad Board) </a>  </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                    <td> 8 </td>
+                                                    <td> Feb 22 (Fri) to Feb 27 (Sat)</td>
+                                                    <td> Mid-semester Examination  </td>
+                                                    <td>  </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td> 9 </td>
+                                                    <td> Mar 2 onwards <br>(Wed)</td>
+                                                    <td> Project Implementation and Component Issue </td>
+                                                    <td> - </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td> 10 </td>
+                                                    <td> Apr 16 to Apr 30 </td>
+                                                    <td> Project Demonstration </td>
+                                                    <td> - </td>
+                                            </tr> -->
+                                        </table>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+<div id="resources" class="even-div">
+        <div class="container">
+          <br><br><br><br><br>
+                <h1 class="text-center">Resources</h1>
+                <div id="outline" class="gcontent-div">
+                    <div class="container">
+                          <div class="row">
+                                <div class="col-md-12">
+                                        <div id="wrap">
+                                               <table border = "1" style="width:100%" max-width=100% white-space=nowrap >
+
+                                                      <tr align="center">
+                                                            <td width=10%  > # </td>
+                                                            <td width=45% > Title </td>
+                                                            <td width=45% > Description </td>
+                                                    </tr>
+
+                                                    <tr align="center">
+                                                            <td> 0 </td>
+                                                            <td> <a target="blank" href="https://drive.google.com/folderview?id=0BwLmQGS-3ITBdzE2dXo5TXF4U0E&usp=sharing"> Firebird V ATMEGA2560 DVD </a></td>
+                                                            <td> All the tutorials and resources for learning Firebird V Atmega 2560  </td>
+                                                    </tr> 
+
+                                                    <!--     
+                                                    <tr>
+                                                            <td> 1.a </td>
+                                                            <td> <a target="blank" href="Resources/CCS-installer"> Download CCS Web Installer (for both Windows and Linux) </a> </td>
+                                                            <td> Download CCS Web Installer (for both Windows and Linux) </td>
+                                                    </tr>  
+
+                                                    <tr>
+                                                            <td> 1.b </td>
+                                                            <td> <a target="blank" href="http://processors.wiki.ti.com/index.php/Download_CCS"> Installation Instruction </a>  </td>
+                                                            <td> CCS installation instructions (for both Windows and Linux) </td>
+                                                    </tr>  
+
+                                                    <tr>
+                                                            <td> 1.c </td>
+                                                            <td> <a target="blank" href="Resources/Tiva/SW-TM4C-2.1.2.111.exe"> TIVAWare Windows </a>  </td>
+                                                            <td> TIVAWare Installation Windows. Run the installer. </td>
+                                                    </tr> 
+
+                                                    <tr>
+                                                            <td> 1.d </td>
+                                                            <td> <a target="blank" href="Resources/Tiva/TivaWare_C_Series-2.1.2.111.zip"> TIVAWare Linux </a>  </td>
+                                                            <td> TIVAWare Installation Linux. Place it in the /opt/ti folder. Use the same path when you are doing the configuration of your project. </td>
+                                                    </tr> 
+
+
+
+                                                    <tr>
+                                                            <td> 2 </td>
+                                                            <td><a target="blank" href="Resources/Tiva/UsersGuide.pdf"> User Guide </a> 
+
+                                                            </td>
+                                                            <td> User Guide to use the Tiva development board </td>
+
+                                                    </tr>
+
+                                                    <tr>
+                                                            <td> 3 </td>
+                                                            <td>
+                                                               <a target="blank" href="Resources/Tiva/Z-EK-TM4C123GXL Rev A Schematic.pdf" "> Schematic </a> 
+
+                                                       </td>
+                                                       <td> Use this document to find where the peripherals of the board are connected </td>
+
+                                               </tr>
+
+                                               <tr>
+                                                    <td> 4 </td>
+                                                    <td>
+                                                         <a target="blank" href="Resources/Tiva/PeripheralDriverLibrary.pdf"> Peripheral Driver Library </a>  
+
+                                                 </td>
+                                                 <td> Use this document to read about the API to program the board </td>
+
+                                         </tr>
+
+                                         <tr>
+                                            <td> 5 </td>
+                                            <td> <a target="blank" href="http://processors.wiki.ti.com/index.php?title=Getting_Started_with_the_TIVA%E2%84%A2_C_Series_TM4C123G_LaunchPad&DCMP=tivac&HQS=TM4C123G-Launchpad-Workshop"> Getting Started with the TIVA™ C Series TM4C123G LaunchPad </a>  </td>
+                                            <td> All the resources and content for using the lauchpad are available here  </td>
+                                    </tr>
+
+                                    <tr>
+                                            <td> 6 </td>
+                                            <td> <a target="blank" href="Resources/Tiva/tm4c123gh6pm-Datasheet.pdf"> TIVA TM4C123G datasheet </a>  </td>
+                                            <td> This PDF contains the datasheet of TIVA TM4C123H6PM   </td>
+                                    </tr>
+
+                                    <tr>
+                                            <td> 7 </td>
+                                            <td> <a target="blank" href="Resources/Tiva/TM4C123G_LaunchPad_Workshop_Workbook.pdf"> TM4C123G LaunchPad Workshop Workbook </a>  </td>
+                                            <td> Texas Instrument TM4C123G LaunchPad Workshop - Student Guide and Lab Manual   </td>
+                                    </tr> -->
+                                    <!--<tr>
+                                            <td> 8 </td>
+                                            <td> <a target="blank" href="Resources/FirebirdLinux/fix_avrstudio4.zip"> AVR Studio 4 fix for Windows </a>  </td>
+                                            <td> Atmel Studio 4 Fix for Windows for fixing the "opening dependency file" error in AVR Studio 4.
+                                            </td>
+                                    </tr> 
+
+                                    <tr>
+                                            <td> 9 </td>
+                                            <td> <a target="blank" href="http://energia.nu/pin-maps/guide_tm4c123launchpad/"> Use Arduino like IDE prototyping your projects with TIVA board </a>  </td>
+                                            <td>  Guide to the TM4C123 LaunchPad (EK-TM4C123GXL) Supported in Energia version 10+ </td>
+                                    </tr> 
+
+
+                                    <tr>
+                                            <td> 10 </td>
+                                            <td> <a target="blank" href="https://github.com/eyantrainternship/eYSIP_2015_IoT-Connected-valves-for-irrigation-of-greenhouse"> ESP8266 Getting Started</a>  </td>
+                                            <td> Documentation of IoT Connected valves for irrigation of greenhouse based on ESP8266 wifi module </td>
+                                    </tr> 
+
+                                    <tr>
+                                            <td> 11 </td>
+                                            <td> <a target="blank" href="Resources/Project-Resources/CS-684 project-Class-room-automation.rar"> CS684 Class Room Automation Based on ESP8266</a>  </td>
+                                            <td> Documentation of Class Room Automation Based on ESP8266 wifi module </td>
+                                    </tr> 
+
+                                    <tr>
+                                            <td> 12 </td>
+                                            <td> <a target="blank" href="Resources/Project-Resources/ColorSensorInterfacing.rar"> Color Sensor Interfacing </a>  </td>
+                                            <td>  Tutorial on interfacing color sensor with Firebird V robot with sample code</td>
+                                    </tr> 
+
+                                    <tr>
+                                            <td> 13 </td>
+                                            <td> <a target="blank" href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Feyantra%2FeYSIP2014_Communication_Module_Interfacing&sa=D&sntz=1&usg=AFQjCNGizMnCBeFZeX01YErTwtXrBf-Iaw"> Tutorial on Xbee module interfacing </a>  </td>
+                                            <td>Exhaustive tutorial on Xbee module interfacing with Firebird V robot</td>
+                                    </tr> 
+
+                                    <tr>
+                                            <td> 14 </td>
+                                            <td> <a target="blank" href="Resources/Project-Resources/LCD_Interfacing_with_TIVA.zip"> LCD interfacing with TIVA Launchpad  </a> </td>
+                                            <td> Sample code for interfacing 16x2 LCD with Tiva Launchpad</td>
+                                    </tr> -->
+
+
+                                </table> 
+
+
+                                         </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+<!-- Inventory div -->
+<div id="inventory" class="odd-div">
+        <div class="container">
+          <br><br><br><br><br>
+                <h1 class="text-center">Lab Inventory</h1>
+                <div id="inventory" class="content-div">
+                    <div class="container">
+                          <div class="row">
+                                <div class="col-md-12">
+                                        <div id="wrap">
+
+                                                <table border = "1" style="width:100%" max-width=100% white-space=nowrap >
+
+                                                        <tr align="center">
+                                                            <td width=10% > <b>#</b> </td>
+                                                            <td width=35% > <b>Component</b> </td>
+                                                            <td width=15% > <b>Quantity</b> </td>
+                                                        </tr>
+
+                                                       <tr align="center"><td>1</td><td>FireBird V</td><td>20</td></tr>
+                                                       <tr align="center"><td>2</td><td>Spark V</td><td>10</td></tr>
+                                                       <tr align="center"><td>3</td><td>R-Pi</td><td>5</td></tr>
+                                                       <tr align="center"><td>4</td><td>Bluetooth </td><td>3</td></tr>
+                                                       <tr align="center"><td>5</td><td>Wi-Fi module</td><td>5</td></tr>
+                                                       <tr align="center"><td>6</td><td>USB camera</td><td>10</td></tr>
+                                                       <tr align="center"><td>7</td><td>IP camera</td><td>1</td></tr>
+                                                       <tr align="center"><td>8</td><td>Wiced broadcom Environmental sensor</td><td>5</td></tr>
+                                                       <tr align="center"><td>9</td><td>Kinect Sensor</td><td>3</td></tr>
+                                                       <tr align="center"><td>10</td><td>Leap motion sensor</td><td>1</td></tr>
+                                                       <tr align="center"><td>11</td><td>RFID sensor</td><td>2</td></tr>
+                                                       <tr align="center"><td>12</td><td>RFID tag</td><td>10</td></tr>
+                                                       <tr align="center"><td>13</td><td>TIVA C-series board</td><td>50</td></tr>
+                                                       <tr align="center"><td>14</td><td>MSP430 Launchpad</td><td>5</td></tr>
+                                                       <tr align="center"><td>15</td><td>Arduino Mega (Atmega 2560)</td><td>1</td></tr>
+                                                       <tr align="center"><td>16</td><td>Intel Atom with FPGA</td><td>20</td></tr>
+                                                       <tr align="center"><td>17</td><td>Intel Galileo Board</td><td>40</td></tr>
+                                                       <tr align="center"><td>18</td><td>Servo motor</td><td>20</td></tr>
+                                                       <tr align="center"><td>19</td><td>BO DC motor</td><td>20</td></tr>
+                                                       <tr align="center"><td>20</td><td>Motor driver module</td><td>2</td></tr>
+                                                       <tr align="center"><td>21</td><td>R-Pi gertboard</td><td>2</td></tr>
+                                                       <tr align="center"><td>22</td><td>GPS </td><td>2</td></tr>
+                                                       <tr align="center"><td>23</td><td>9-Axis IMU</td><td>2</td></tr>
+                                                       <tr align="center"><td>24</td><td>3-Axis robotic arm</td><td>2</td></tr>
+                                                       <tr align="center"><td>25</td><td>7-Axis robotic arm</td><td>1</td></tr>
+                                                       <tr align="center"><td>26</td><td>FireBird VI</td><td>2</td></tr>
+                                                       <tr align="center"><td>27</td><td>Beaglebone Black</td><td>1</td></tr>
+                                                       <tr align="center"><td>28</td><td>128x64 Graphic LCD</td><td>5</td></tr>
+                                                       <tr align="center"><td>29</td><td>3-Axis accelerometer</td><td>1</td></tr>
+                                                       <tr align="center"><td>30</td><td>Xbee Module</td><td>20</td></tr>
+                                                       <tr align="center"><td>31</td><td>Xbee USB adaptor</td><td>10</td></tr>
+                                                       <tr align="center"><td>32</td><td>Arduino Wifi Shield</td><td>2</td></tr>
+                                                       <tr align="center"><td>33</td><td>Arduino Ethernet shield</td><td>2</td></tr>
+                                                </table>
+                                                
+                                        </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+</div>
+
+<!-- Projects div 
+<div id="projects" class="odd-div">
+      <div class="container">
+            <div class="row">
+                  <div class="col-lg-12">
+                        <h1>Projects</h1>
+                </div>
+        </div>
+</div>
+</div>-->
+
+<br>
+<hr>
+<!-- Start of SimpleHitCounter Code -->
+<div align="center"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=2145006&f=0&b=16777215" border="0" height="18" width="83" alt="web counter"></a><br><a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">web counter</a></div>
+<!-- End of SimpleHitCounter Code -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
